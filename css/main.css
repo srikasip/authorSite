@@ -25,13 +25,13 @@ Choose the colour you wish to use => colour-azure.css is default
 */
 /*@import url(colour-azure.css);*/
 @import url(colour-blue.css);
-@import url(http://fonts.googleapis.com/css?family=Tangerine);
+@import url(http://fonts.googleapis.com/css?family=Tangerine|Raleway);
 
 /*******************************************************************************************************************
 *  BASE                                                                                                            
 *******************************************************************************************************************/
 html{background:#f2f2f2;}
-body{color:#727272; font:normal 13px "Helvetice Neue",Arial,Tahoma,Verdana;}
+body{color:#727272; font:normal 10pt "Palatino Linotype", "Book Antiqua", Palatino, serif}
 p{line-height:1.5em; margin-bottom:15px;}
 p strong{color:#424242;}
 address{font-style:normal; padding-bottom:15px;}
@@ -45,12 +45,14 @@ a:hover{color:#000; text-decoration:underline;}
 /*******************************************************************************************************************
 *  H1 - H4                                                                                                         
 *******************************************************************************************************************/
-h1, h2, h3, h4{line-height:1.2em; margin-bottom:15px; font-weight:bold;}
+h1, h2, h3, h4{line-height:1.2em; margin-bottom:15px; font-weight:bold; font-family:"Raleway"}
 h1{font-size:3.0em; color:#fff; font-weight:normal;}
 h1 strong{font-weight:bold;}
-h2{font-size:1.1em; color:#737373; margin-bottom:30px; border-bottom:1px solid #e5e5e5; padding-bottom:10px;}
-h3, h4{font-size:1.4em; color:#424242; text-shadow:1px 1px 1px #fff; margin-bottom:10px;}
-h4{font-size:1.6em;}
+h2{font-size:1.4em; color:#737373; margin-bottom:30px; border-bottom:1px solid #e5e5e5; padding-bottom:10px;}
+h3, h4{font-size:1.25em; color:#424242; text-shadow:1px 1px 1px #fff; margin-bottom:10px;}
+h4{font-size:1.1em;}
+
+h2 span.subheading{font-size:0.9em;}
 
 /*******************************************************************************************************************
 *  HEADER                                                                                                          
@@ -58,7 +60,7 @@ h4{font-size:1.6em;}
 header{height:84px; line-height:84px; background:#1a1a1a; position:relative; z-index:100;}
 header a#logo{font-size:4.2em; font-family:"Tangerine"; font-weight:normal; display:block; position:absolute; top:0; left:20px; color:#fff; text-decoration:none;}
 header a#logo:hover{text-decoration:none; color:#f7f7f7;}
-header #nav{position:absolute; top:0; right:0;}
+header #nav{position:absolute; top:0; right:0; font-family:"Raleway";}
 header #nav > strong{display:none;}
 header #nav > ul > li{float:left; background:url("img/nav-sep.png") no-repeat 0 50%; position:relative;}
 header #nav > ul > li.parent > a{background:url("img/nav-more.png") no-repeat 20px 50%; padding-left:40px;}
@@ -181,7 +183,6 @@ footer .socialIcons a.blog{background:url("img/small-blog.png") no-repeat;}
 	#intro .inner{padding:30px 0;}
 	
 	/*#intro p{padding-right:0 !important;}*/
-	
 	#intro .inner h1{margin-bottom: 10px;font-size:15pt;}
 	#intro .inner p{color:#fff; margin:0px; padding:0px; padding-left:5%;font-size:13pt;}
 	#intro .inner span{color:#fff; margin:0px; padding:0px; padding-left:15%;font-size:11pt;font-style:italic;}
