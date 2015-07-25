@@ -31,7 +31,7 @@ Choose the colour you wish to use => colour-azure.css is default
 *  BASE                                                                                                            
 *******************************************************************************************************************/
 html{background:#f2f2f2;}
-body{color:#727272; font:normal 10pt "Palatino Linotype", "Book Antiqua", Palatino, serif}
+body{color:#727272; font:normal 10pt "Palatino Linotype", "Book Antiqua", Palatino, serif; padding-top:84px;}
 p{line-height:1.5em; margin-bottom:15px;}
 p strong{color:#424242;}
 address{font-style:normal; padding-bottom:15px;}
@@ -49,15 +49,15 @@ h1, h2, h3, h4{line-height:1.2em; margin-bottom:15px; font-weight:bold; font-fam
 h1{font-size:3.0em; color:#fff; font-weight:normal;}
 h1 strong{font-weight:bold;}
 h2{font-size:1.4em; color:#737373; margin-bottom:30px; border-bottom:1px solid #e5e5e5; padding-bottom:10px;}
-h3, h4{font-size:1.25em; color:#424242; text-shadow:1px 1px 1px #fff; margin-bottom:10px;}
+h3, h4{font-size:1.25em; color:#424242; margin-bottom:10px; font-weight:bold;}
 h4{font-size:1.1em;}
 
 h2 span.subheading{font-size:0.9em;}
 
 /*******************************************************************************************************************
-*  HEADER                                                                                                          
+*  HEADER                                                                                                           
 *******************************************************************************************************************/
-header{height:84px; line-height:84px; background:#1a1a1a; position:relative; z-index:100;}
+header{height:84px; line-height:84px; background:#1a1a1a; z-index:100; position:fixed; top:0; left:0; width:100%;}
 header a#logo{font-size:4.2em; font-family:"Tangerine"; font-weight:normal; display:block; position:absolute; top:0; left:20px; color:#fff; text-decoration:none;}
 header a#logo:hover{text-decoration:none; color:#f7f7f7;}
 header #nav{position:absolute; top:0; right:0; font-family:"Raleway";}
@@ -76,9 +76,9 @@ header #nav > ul > li > a:hover{color:#fff; text-decoration:none;}
 #intro{border-bottom:0px solid #fff; position:relative; z-index:90;}
 #intro .inner{padding:55px 0;}
 
-#intro .inner h1{margin-bottom: 10px;}
-#intro .inner p{color:#fff; margin:0px; padding:0px; padding-left:10%;font-size:19pt;}
-#intro .inner span{color:#fff; margin:0px; padding:0px; padding-left:25%;font-size:16pt;font-style:italic;}
+#intro .inner h1{margin-bottom: 10px; font-size:1.8em;}
+#intro .inner p{color:#fff; margin:0px; padding:0px; padding-left:5%;font-size:1.5em;}
+#intro .inner span{color:#fff; margin:0px; padding:0px; padding-left:25%;font-size:1.5em;}
 
 #intro .button{text-shadow:-1px -1px 0 #ff6d00; text-transform:none; border:0; font-size:13px; background-color:#ff9a01; border-radius:5px; color:#fff; display:inline-block; padding:15px 40px; text-decoration:none; box-shadow:0 2px 2px #2596b7;  border-top:1px solid #ffe702; background:-moz-linear-gradient(top, #ffc101 0%, #ff9a01); background:-webkit-gradient(linear, left top, left bottom, from(#ffc101), to(#ff9a01));}
 #intro .button:hover{background:-moz-linear-gradient(top, #ff9a01 0%, #ffc101); background:-webkit-gradient(linear, left top, left bottom, from(#ff9a01), to(#ffc101));}
@@ -179,6 +179,7 @@ footer .socialIcons a.blog{background:url("img/small-blog.png") no-repeat;}
 }
 
 @media (max-width: 580px) { 
+	body{padding-top:50px;}
 	header{height:50px; line-height:50px;}
 	#intro .inner{padding:30px 0;}
 	

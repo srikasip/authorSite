@@ -13,7 +13,7 @@ a, a:link, a:focus{color:#295fa2;}
 
 
 
-#intro .inner{background: rgba(0, 0, 0, 0.5);}
+#intro .inner{background: rgba(0, 0, 0, 0.2);}
 #intro .inner{font-family:"Raleway";}
 
 #intro {background:url("img/blue/intro-middle.png") no-repeat; background-position:center; background-size:100% auto; }
