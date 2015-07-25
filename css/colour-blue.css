@@ -16,11 +16,8 @@ a, a:link, a:focus{color:#295fa2;}
 #intro .inner{background: rgba(0, 0, 0, 0.2);}
 #intro .inner{font-family:"Raleway";}
 
-#intro {background:url("img/blue/intro-middle.png") no-repeat; background-position:center; background-size:100% auto; }
+#intro {background:url("img/blue/intro-middle.png") no-repeat; background-position:center; background-size:cover; }
 
-@media (max-width: 1024px) { 
-  #intro {background:url("img/blue/intro-middle.png") no-repeat; background-position:center; background-size:auto 100%; }
-}
 
 @media (max-width:800px){
   #intro {font-size:8pt;}
