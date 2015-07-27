@@ -16,7 +16,6 @@ $(document).ready(function () {
 
 
     $('button#subscribe').click(function(event){
-        
         addy = $("#email").val();
 
         var request = $.ajax({
@@ -33,7 +32,7 @@ $(document).ready(function () {
          
         request.fail(function( jqXHR, textStatus ) {
           //alert( "Request failed: " + textStatus );
-          $("#connectResponse").text("Thanks so much," + addy + "! I got your email and will be in touch."); 
+          $("#connectResponse").text("Thanks so much, " + addy + "! I got your email and will be in touch."); 
           $("#email").val('');
         });
 
